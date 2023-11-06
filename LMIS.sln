@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMIS", "LMIS\LMIS.csproj", "{7243211F-E682-4EF7-B85E-8E50C36DA901}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7243211F-E682-4EF7-B85E-8E50C36DA901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7243211F-E682-4EF7-B85E-8E50C36DA901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7243211F-E682-4EF7-B85E-8E50C36DA901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7243211F-E682-4EF7-B85E-8E50C36DA901}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5166609A-DACA-4D80-8E3E-81554E6B466C}
+	EndGlobalSection
+EndGlobal
