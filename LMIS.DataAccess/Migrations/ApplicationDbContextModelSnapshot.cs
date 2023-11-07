@@ -32,7 +32,7 @@ namespace LMIS.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.ToTable("ApplicationUsers");
+                    b.ToTable("ApplicationUsers", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
