@@ -9,5 +9,7 @@ namespace LMIS.Data
             : base(options)
         {
         }
+
+
     }
 }
