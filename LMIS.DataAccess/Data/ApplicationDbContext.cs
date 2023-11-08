@@ -1,4 +1,5 @@
 ﻿
+using LMIS.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,6 @@ namespace LMIS.DataAccess.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
         {
         }
-        
+        public DbSet<ApplicationUser> applicationUsers { get; set; }
     }
 }
