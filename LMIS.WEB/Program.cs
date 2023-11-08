@@ -5,6 +5,9 @@ using LMIS.DataAccess.Data;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using LMIS.Utilities;
+using LMIS.DataAccess.Repository.IRepository;
+using LMIS.DataAccess.Repository;
+using LMIS.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,10 +17,10 @@ var connectionString = builder.Configuration.GetConnectionString("PostgreSQLConn
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(connectionString));
 builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
-
-//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IEmailSender,EmailSender>();
+builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
