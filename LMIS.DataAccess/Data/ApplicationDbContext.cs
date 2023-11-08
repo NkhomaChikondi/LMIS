@@ -17,13 +17,6 @@ namespace LMIS.DataAccess.Data
         {
         }
         public DbSet<ApplicationUser> applicationUsers { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-
-            // Configure TPH for IdentityUser and ApplicationUser
-            modelBuilder.Entity<ApplicationUser>().HasBaseType<IdentityUser>();
-            modelBuilder.Entity<IdentityUser>().ToTable("AspNetUsers"); 
-        }
+       
     }
 }

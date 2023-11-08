@@ -36,6 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LMIS.API\LMIS.API.csproj" />
     <ProjectReference Include="..\LMIS.DataAccess\LMIS.DataAccess.csproj" />
     <ProjectReference Include="..\LMIS.Models\LMIS.Models.csproj" />
     <ProjectReference Include="..\LMIS.Utilities\LMIS.Utilities.csproj" />
@@ -45,6 +46,9 @@
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Book\Controllers\" />
+    <Folder Include="Areas\Book\Data\" />
+    <Folder Include="Areas\Book\Models\" />
   </ItemGroup>
 
 </Project>
